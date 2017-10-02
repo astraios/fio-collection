@@ -1,0 +1,25 @@
+[seq-rw-small-bufferon]
+# Mode: read, write, trim, randread, randwrite, rw, randrw, trimwrite
+rw=rw
+
+# Block size
+blocksize=4k
+
+# IO Engine, sync, libaio
+ioengine=sync
+
+# Bufferized IO, if direct=1 no buffer will be used
+direct=0
+
+# Files
+
+# Combine nrfiles and size, fio will fill `size` disk space with a number of `nrfiles`
+# nrfiles=500
+# filesize=2m
+# size=20m
+# Combien nrfiles and filesize, fio will create `nrfiles` of `filesize`, the disk usage will equal nrfiles*filesize
+nrfiles=1000
+filesize=1m
+
+# Where to put the test files, the directory must exist before hand
+directory=data
