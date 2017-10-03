@@ -3,7 +3,7 @@
 rw=randwrite
 
 # Block size
-blocksize=4k
+blocksize=4096k
 
 # IO Engine, sync, libaio
 ioengine=sync
